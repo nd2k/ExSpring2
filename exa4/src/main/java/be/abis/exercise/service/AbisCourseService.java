@@ -12,6 +12,7 @@ public class AbisCourseService implements CourseService {
 
     @Autowired
     private CourseRepository courseRepository;
+    TrainingService trainingService;
 
     @Override
     public List<Course> findAllCourses() {

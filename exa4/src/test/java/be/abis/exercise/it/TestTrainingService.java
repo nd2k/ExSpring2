@@ -18,7 +18,6 @@ public class TestTrainingService {
 
     @Autowired
     TrainingService trainingService;
-    CourseService courseService;
 
     @Test
     public void findPersonById() {

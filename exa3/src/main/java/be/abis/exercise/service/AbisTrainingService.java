@@ -1,5 +1,6 @@
 package be.abis.exercise.service;
 
+import be.abis.exercise.exception.EnrollException;
 import be.abis.exercise.model.Course;
 import be.abis.exercise.model.Person;
 import be.abis.exercise.repository.PersonRepository;
@@ -54,7 +55,7 @@ public class AbisTrainingService implements TrainingService {
     }
 
     @Override
-    public void enrollForSession(Person person, Course course, LocalDate date) {
-
+    public void enrollForSession(Person person, Course course, LocalDate date) throws EnrollException {
+        
     }
 }
