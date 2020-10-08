@@ -16,7 +16,7 @@ public class AbisTrainingService implements TrainingService {
 
     @Autowired
     PersonRepository personRepository;
-    CourseService courseService;
+    TrainingService trainingService;
 
     @Override
     public ArrayList<Person> getAllPersons() {
@@ -35,22 +35,22 @@ public class AbisTrainingService implements TrainingService {
 
     @Override
     public void addPerson(Person p) throws IOException {
-        personRepository.addPerson(p);
+
     }
 
     @Override
     public void deletePerson(int id) {
-        personRepository.deletePerson(id);
+
     }
 
     @Override
     public void changePassword(Person p, String newPswd) throws IOException {
-        personRepository.changePassword(p, newPswd);
+
     }
 
     @Override
     public List<Course> showFollowedCourses(Person person) {
-        return null;
+        return trainingService.showFollowedCourses(person);
     }
 
     @Override
