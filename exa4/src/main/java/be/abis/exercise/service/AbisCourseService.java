@@ -11,8 +11,7 @@ import java.util.List;
 public class AbisCourseService implements CourseService {
 
     @Autowired
-    private CourseRepository courseRepository;
-    TrainingService trainingService;
+    CourseRepository courseRepository;
 
     @Override
     public List<Course> findAllCourses() {

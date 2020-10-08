@@ -30,4 +30,15 @@ public class TestTrainingService {
         assertEquals(expectedFirstName, resultFirstName);
 
     }
+
+    @Test
+    public void findCoursebyIdFromTrainingService() {
+
+        int id = 7900;
+        String expectedCourseTitle = "Workshop SQL";
+
+        String resultCourseTitle = trainingService.getCourseService().findCourse(id).getLongTitle();
+
+        assertEquals(expectedCourseTitle, resultCourseTitle);
+    }
 }
