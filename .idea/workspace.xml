@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38a46fc4-bf73-4d44-acdc-998a364ac31a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exa4/src/main/java/be/abis/exercise/exception/EnrollException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exa4/src/test/java/be/abis/exercise/it/TestAppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exa4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/exa4/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exa4/src/main/java/be/abis/exercise/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exa4/src/main/java/be/abis/exercise/controller/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exa4/src/main/java/be/abis/exercise/service/AbisCourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/exa4/src/main/java/be/abis/exercise/service/AbisCourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exa4/src/main/java/be/abis/exercise/service/AbisTrainingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/exa4/src/main/java/be/abis/exercise/service/AbisTrainingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exa4/src/main/java/be/abis/exercise/service/TrainingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/exa4/src/main/java/be/abis/exercise/service/TrainingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exa4/src/main/resources/templates/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/exa4/src/main/resources/templates/course.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exa4/src/test/java/be/abis/exercise/it/TestTrainingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/exa4/src/test/java/be/abis/exercise/it/TestTrainingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exa4/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/exa4/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exa4/src/main/resources/templates/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/exa4/src/main/resources/templates/exercise.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

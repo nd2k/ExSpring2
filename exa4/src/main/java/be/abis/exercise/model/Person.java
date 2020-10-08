@@ -10,8 +10,8 @@ public class Person {
 	private String password;
 	private String language;
 	private Company company;
-	
-	
+
+
 	public int getPersonId() {
 		return personId;
 	}
