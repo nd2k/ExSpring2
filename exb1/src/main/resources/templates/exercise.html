@@ -1,0 +1,12 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Course Information</title>
+</head>
+<body>
+	<h1>Title of Course 7900 is:</h1>
+	<h2 th:text="'Course with ID 7900 has the following title, ' + ${courseTitle} + '!'">This will be replaced</h2>
+
+	<h1 th:text="'Hello ' + ${personFirstName} + ' ' + ${personLastName}"></h1>
+</body>
+</html>
