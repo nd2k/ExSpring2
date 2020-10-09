@@ -2,43 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38a46fc4-bf73-4d44-acdc-998a364ac31a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/exb1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/Exb1Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/controller/AppController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/exception/EnrollException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/model/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/model/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/model/SignInForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/repository/CourseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/repository/FilePersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/repository/MemoryCourseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/repository/PersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/service/AbisCourseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/service/AbisTrainingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/service/CourseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/java/be/abis/exercise/service/TrainingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/resources/create_course_table_derby.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/resources/templates/exercise.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/resources/templates/findcourses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/resources/templates/menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/resources/templates/personadmin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/main/resources/templates/signout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/test/java/be/abis/exercise/Exb1ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/test/java/be/abis/exercise/it/TestAppController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/test/java/be/abis/exercise/it/TestCourseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/test/java/be/abis/exercise/it/TestCourseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/test/java/be/abis/exercise/it/TestPersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exb1/src/test/java/be/abis/exercise/it/TestTrainingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/Exb2Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/controller/AppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/exception/EnrollException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/model/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/model/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/model/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/model/CourseByIdForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/model/CourseByShortTitleForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/model/SignInForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/repository/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/repository/FilePersonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/repository/MemoryCourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/repository/PersonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/service/AbisCourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/service/AbisTrainingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/java/be/abis/exercise/service/TrainingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/resources/create_course_table_derby.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/resources/templates/exercise.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/resources/templates/findallcourses.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/resources/templates/findcoursebyid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/resources/templates/findcoursebyshorttitle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/resources/templates/findcourses.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/resources/templates/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/main/resources/templates/personadmin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/test/java/be/abis/exercise/Exb2ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/test/java/be/abis/exercise/it/TestAppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/test/java/be/abis/exercise/it/TestCourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/test/java/be/abis/exercise/it/TestCourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/test/java/be/abis/exercise/it/TestPersonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exb2/src/test/java/be/abis/exercise/it/TestTrainingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,9 +92,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602150777327" />
-    <state x="360" y="73" key="new project wizard" timestamp="1602230472473">
+    <state x="360" y="73" key="new project wizard" timestamp="1602243315373">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="360" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1602230472473" />
+    <state x="360" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1602243315373" />
   </component>
 </project>

@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <title>Abis App</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Find Courses Page</h1>
+
+            <div class="d-flex flex-column bd-highlight m-5">
+                <a th:href="@{/findallcourses}" class="m-3">Find all courses</a>
+                <a th:href="@{/findcoursebyid}" class="m-3">Find course by Id</a>
+                <a th:href="@{/findcoursebyshorttitle}" class="m-3">Find course by short title</a>
+            </div>
+            <a th:href="@{/menu}" type="button" class="btn btn-secondary">Back</a>
+        </div>
+    </body>
+</html>
