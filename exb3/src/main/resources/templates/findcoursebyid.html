@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <title>Abis App</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="alert alert-success mt-3" role="alert" th:text="${success}" th:if="${success}"></div>
+            <div class="alert alert-danger mt-3" role="alert" th:text="${error}" th:if="${error}"></div>
+            <h1 class="mb-5">Find Courses by Id</h1>
+
+            <form action="#" method="post" th:action="@{/findcoursebyid}" th:object="${courseByIdForm}">
+                <h2 class = "mt-4">Please Enter requested information</h2>
+                <hr/>
+                <div class = "form-group row">
+                    <label for = "courseId" class = "col-sm-2 col-form-label">Course Id</label>
+                    <div class = "col-8">
+                        <input th:field="*{courseId}" id="courseId" type = "text" class = "form-control">
+                    </div>
+                    <div class = "col-4">
+                        <button type = "submit" class = "btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </form>
+
+            <table class="table mt-3" th:if="${retrievedCourse}">
+                <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Short Title</th>
+                      <th scope="col">Long Title</th>
+                      <th scope="col">Number of days</th>
+                      <th scope="col">Price per day</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <th scope="row" th:text="${retrievedCourse.courseId}"></th>
+                      <td th:text="${retrievedCourse.shortTitle}"></td>
+                      <td th:text="${retrievedCourse.longTitle}"></td>
+                      <td th:text="${retrievedCourse.numberOfDays}"></td>
+                      <td th:text="${retrievedCourse.pricePerDay}"></td>
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+
+    </body>
+</html>
