@@ -4,8 +4,6 @@
     <list default="true" id="38a46fc4-bf73-4d44-acdc-998a364ac31a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exc1/src/main/java/be/abis/exercise/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exc1/src/main/java/be/abis/exercise/controller/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exc1/src/main/java/be/abis/exercise/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/exc1/src/main/java/be/abis/exercise/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exc1/src/main/java/be/abis/exercise/model/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/exc1/src/main/java/be/abis/exercise/model/Company.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exc1/src/main/java/be/abis/exercise/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/exc1/src/main/java/be/abis/exercise/model/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exc1/src/main/resources/templates/addnewperson.html" beforeDir="false" afterPath="$PROJECT_DIR$/exc1/src/main/resources/templates/addnewperson.html" afterDir="false" />
     </list>

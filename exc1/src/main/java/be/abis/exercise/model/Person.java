@@ -1,7 +1,9 @@
 package be.abis.exercise.model;
 
+import org.hibernate.validator.constraints.Range;
+
 import javax.validation.Valid;
-import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.*;
 
 public class Person {
 
@@ -9,10 +11,14 @@ public class Person {
 	@NotBlank(message = "First name field is mandatory")
 	private String firstName;
 	private String lastName;
+	@Digits(integer = 3, fraction = 0)
+	@Range(min = 18, message = "Person should be at least 18 years old")
 	private int age;
 	@NotBlank(message = "Email field is mandatory")
+	@Email(message = "The email address must be valid")
 	private String emailAddress;
 	@NotBlank(message = "Password field is mandatory")
+	@Size(min = 6, message = "Password must be at least 6 characters long")
 	private String password;
 	private String language;
 	@Valid

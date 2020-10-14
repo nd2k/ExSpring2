@@ -82,9 +82,7 @@ public class AppController {
 
     @PostMapping("/findcoursebyid")
     public String findCourseById(@ModelAttribute CourseByIdForm courseByIdForm, Model model, RedirectAttributes redirectAttributes) {
-        System.out.println(courseByIdForm.getCourseId());
         Course retrievedCourse = trainingService.getCourseService().findCourse(courseByIdForm.getCourseId());
-        System.out.println(retrievedCourse);
         if (retrievedCourse != null) {
             model.addAttribute("retrievedCourse", retrievedCourse);
             String viewName = "findcoursebyid";
@@ -184,14 +182,13 @@ public class AppController {
     }
 
     @PostMapping("/addnewperson")
-    public String addNewPerson(@Valid Person person, BindingResult bindingResult, Model model) throws IOException {
+    public String addNewPerson(@Valid Person person, BindingResult bindingResult, RedirectAttributes redirectAttributes) throws IOException {
         if(bindingResult.hasErrors()) {
-            System.out.println(bindingResult);
             String viewName = "addnewperson";
             return viewName;
         }
         trainingService.addPerson(person);
-        model.addAttribute("success", "Person with ID: " + person.getPersonId() + " has been created");
+        redirectAttributes.addFlashAttribute("success", "Person with ID: " + person.getPersonId() + " has been created");
         String viewName = "redirect:/addnewperson";
         return viewName;
     }
