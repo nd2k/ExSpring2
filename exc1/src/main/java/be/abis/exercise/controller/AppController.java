@@ -184,13 +184,14 @@ public class AppController {
     }
 
     @PostMapping("/addnewperson")
-    public String addNewPerson(@Valid @ModelAttribute("person") Person person, RedirectAttributes redirectAttributes, BindingResult bindingResult, Model model) throws IOException {
+    public String addNewPerson(@Valid Person person, BindingResult bindingResult, Model model) throws IOException {
         if(bindingResult.hasErrors()) {
+            System.out.println(bindingResult);
             String viewName = "addnewperson";
             return viewName;
         }
         trainingService.addPerson(person);
-        redirectAttributes.addFlashAttribute("success", "Person with ID: " + person.getPersonId() + " has been created");
+        model.addAttribute("success", "Person with ID: " + person.getPersonId() + " has been created");
         String viewName = "redirect:/addnewperson";
         return viewName;
     }

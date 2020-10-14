@@ -1,5 +1,6 @@
 package be.abis.exercise.model;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 
 public class Person {
@@ -14,6 +15,7 @@ public class Person {
 	@NotBlank(message = "Password field is mandatory")
 	private String password;
 	private String language;
+	@Valid
 	private Company company;
 
 

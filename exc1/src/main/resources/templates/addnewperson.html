@@ -38,6 +38,9 @@
                     <div class = "col-sm-4">
                         <input th:field="*{emailAddress}" id="email" type = "text" class = "form-control">
                     </div>
+                    <div class="col-sm-4">
+                        <span class="text-danger" th:errors="*{emailAddress}"> </span>
+                    </div>
                 </div>
                 <div class = "form-group row">
                     <label for = "age" class = "col-sm-2 col-form-label">Your Age</label>
@@ -59,12 +62,18 @@
                     <div class = "col-sm-4">
                         <input th:field="*{password}" id="password" type = "password" class = "form-control">
                     </div>
+                    <div class="col-sm-4">
+                        <span class="text-danger" th:errors="*{password}"> </span>
+                    </div>
                 </div>
 
                 <div class = "form-group row ">
                     <label for = "companyName" class = "col-sm-2 col-form-label mr-0">Your company name</label>
                     <div class = "col-sm-4">
                         <input th:field="*{company.name}" id="companyName" type = "text" class = "form-control">
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="text-danger" th:errors="*{company.name}"> </span>
                     </div>
                 </div>
 
@@ -100,6 +109,9 @@
                     <label for = "addressTown" class = "col-sm-2 col-form-label mr-0">Your company's town address</label>
                     <div class = "col-sm-4">
                         <input th:field="*{company.address.town}" id="addressTown" type = "text" class = "form-control">
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="text-danger" th:errors="*{company.address.town}"> </span>
                     </div>
                 </div>
 
