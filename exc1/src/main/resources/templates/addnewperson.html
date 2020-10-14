@@ -1,0 +1,127 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <title>Abis App</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="alert alert-success mt-3" role="alert" th:text="${success}" th:if="${success}"></div>
+            <div class="alert alert-danger mt-3" role="alert" th:text="${error}" th:if="${error}"></div>
+            <form action="#" method="post" th:action="@{/addnewperson}" th:object="${person}">
+                <h2 class = "mt-4">Add a new person</h2>
+                <hr/>
+                <div class = "form-group row">
+                    <label for = "personId" class = "col-sm-2 col-form-label">Your Person Id</label>
+                    <div class = "col-sm-4">
+                        <input th:field="*{personId}" id="personId" type = "text" class = "form-control">
+                    </div>
+                </div>
+                <div class = "form-group row">
+                    <label for = "firstName" class = "col-sm-2 col-form-label">Your First Name</label>
+                    <div class = "col-sm-4">
+                        <input th:field="*{firstName}" id="firstName" type = "text" class = "form-control">
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="text-danger" th:errors="*{firstName}"> </span>
+                    </div>
+                </div>
+                <div class = "form-group row">
+                    <label for = "lastName" class = "col-sm-2 col-form-label">Your Last Name</label>
+                    <div class = "col-sm-4">
+                        <input th:field="*{lastName}" id="lastName" type = "text" class = "form-control">
+                    </div>
+                </div>
+                <div class = "form-group row">
+                    <label for = "email" class = "col-sm-2 col-form-label">Your email</label>
+                    <div class = "col-sm-4">
+                        <input th:field="*{emailAddress}" id="email" type = "text" class = "form-control">
+                    </div>
+                </div>
+                <div class = "form-group row">
+                    <label for = "age" class = "col-sm-2 col-form-label">Your Age</label>
+                    <div class = "col-sm-4">
+                        <input th:field="*{age}" id="age" type = "text" class = "form-control">
+                    </div>
+                </div>
+
+                <label for = "language" class = "col-sm-2 col-form-label">Your Language:</label>
+                <select class="form-control mb-3" name="language" id="language">
+                    <option th:each="language : ${T(be.abis.exercise.model.Languages).values()}"
+                            th:value="${language}"
+                            th:text="${language}">
+                    </option>
+                </select>
+
+                <div class = "form-group row ">
+                    <label for = "password" class = "col-sm-2 col-form-label mr-0">Your password</label>
+                    <div class = "col-sm-4">
+                        <input th:field="*{password}" id="password" type = "password" class = "form-control">
+                    </div>
+                </div>
+
+                <div class = "form-group row ">
+                    <label for = "companyName" class = "col-sm-2 col-form-label mr-0">Your company name</label>
+                    <div class = "col-sm-4">
+                        <input th:field="*{company.name}" id="companyName" type = "text" class = "form-control">
+                    </div>
+                </div>
+
+                <div class = "form-group row ">
+                    <label for = "companyPhone" class = "col-sm-2 col-form-label mr-0">Your company's phone</label>
+                    <div class = "col-sm-4">
+                        <input th:field="*{company.telephoneNumber}" id="companyPhone" type = "text" class = "form-control">
+                    </div>
+                </div>
+
+                <div class = "form-group row ">
+                    <label for = "companyVat" class = "col-sm-2 col-form-label mr-0">Your company's VAT</label>
+                    <div class = "col-sm-4">
+                        <input th:field="*{company.vatNr}" id="companyVat" type = "text" class = "form-control">
+                    </div>
+                </div>
+
+                <div class = "form-group row ">
+                    <label for = "addressStreet" class = "col-sm-2 col-form-label mr-0">Your company's street address</label>
+                    <div class = "col-sm-4">
+                        <input th:field="*{company.address.street}" id="addressStreet" type = "text" class = "form-control">
+                    </div>
+                </div>
+
+                <div class = "form-group row ">
+                    <label for = "addressNr" class = "col-sm-2 col-form-label mr-0">Your company's number address</label>
+                    <div class = "col-sm-4">
+                        <input th:field="*{company.address.nr}" id="addressNr" type = "text" class = "form-control">
+                    </div>
+                </div>
+
+                <div class = "form-group row ">
+                    <label for = "addressTown" class = "col-sm-2 col-form-label mr-0">Your company's town address</label>
+                    <div class = "col-sm-4">
+                        <input th:field="*{company.address.town}" id="addressTown" type = "text" class = "form-control">
+                    </div>
+                </div>
+
+                <div class = "form-group row ">
+                    <label for = "addressZip" class = "col-sm-2 col-form-label mr-0">Your company's Zip code address</label>
+                    <div class = "col-sm-4">
+                        <input th:field="*{company.address.zipcode}" id="addressZip" type = "text" class = "form-control">
+                    </div>
+                </div>
+
+                <div class = "form-group row">
+                    <div class = "col-sm-10">
+                        <button type = "submit" class = "btn btn-primary">Add Person</button>
+                    </div>
+                </div>
+            </form>
+
+            <a th:href="@{/personadmin}" type="button" class="btn btn-secondary">Back</a>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
