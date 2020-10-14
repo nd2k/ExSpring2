@@ -15,7 +15,7 @@
         <h2 class = "mt-4">Please Enter requested information</h2>
         <hr/>
         <div class = "form-group row">
-            <label for = "shortTitle" class = "col-sm-2 col-form-label">Old Password</label>
+            <label for = "shortTitle" class = "col-sm-2 col-form-label">Short title</label>
             <div class = "col-8">
                 <input th:field="*{shortTitle}" id="shortTitle" type = "text" class = "form-control">
             </div>
@@ -45,6 +45,8 @@
         </tr>
         </tbody>
     </table>
+
+    <a th:href="@{/findcourses}" type="button" class="btn btn-secondary">Back</a>
 </div>
 
 </body>
